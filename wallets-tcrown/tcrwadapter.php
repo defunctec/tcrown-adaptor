@@ -19,7 +19,7 @@
  * License URI: *LICENSEURI*
  */
 
-function wallets_multiadapter_coins_filter( $coins ) {
+function wallets_multiadapter_coins_filter1( $coins ) {
 	$coins['tCRW'] = array( // replace XYZ with the coin's ticker symbol in this line
 
 		// Coin symbol (again)
@@ -71,4 +71,4 @@ function wallets_multiadapter_coins_filter( $coins ) {
 	return $coins;
  }
 
-add_filter( 'wallets_multiadapter_coins', 'wallets_multiadapter_coins_filter' );
+add_filter( 'wallets_multiadapter_coins', 'wallets_multiadapter_coins_filter1' );
